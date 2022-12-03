@@ -1,14 +1,5 @@
 import styled from "@emotion/styled";
-import {
-  Title,
-  Group,
-  MediaQuery,
-  ActionIcon,
-  ActionIconProps,
-  createPolymorphicComponent,
-  keyframes,
-} from "@mantine/core";
-import Image from "next/image";
+import { Title, Group, MediaQuery } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import ProjectItem from "../components/ProjectItem";
 
@@ -23,33 +14,40 @@ function Skills() {
           <StyledGroup>
             <Title>&lt;projects&gt;</Title>
           </StyledGroup>
-          <Carousel
-            slideSize="70%"
-            height='70vh'
-            slideGap="xs"
-            controlsOffset="xs"
-            withIndicators
-            loop
-          >
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-            <Carousel.Slide>
-              <ProjectItem />
-            </Carousel.Slide>
-          </Carousel>
+          <MediaQuery largerThan={700} styles={{ maxWidth: "60vw" }}>
+            <MediaQuery smallerThan={700} styles={{ maxWidth: "100vw" }}>
+              <Carousel
+                slideSize="80%"
+                height="80vh"
+                slideGap="xs"
+                controlsOffset="xl"
+                loop
+                withIndicators
+              >
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <ProjectItem />
+                </Carousel.Slide>
+              </Carousel>
+            </MediaQuery>
+          </MediaQuery>
         </StyledContainer>
       </MediaQuery>
     </MediaQuery>
