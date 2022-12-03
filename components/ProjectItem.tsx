@@ -47,6 +47,6 @@ const StyledDescription = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 0px;
+  bottom: 15px;
   padding: 10px 0px;
 `;

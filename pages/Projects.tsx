@@ -5,24 +5,25 @@ import ProjectItem from "../components/ProjectItem";
 
 function Skills() {
   return (
-    <MediaQuery largerThan={700} styles={{ width: "60vw", marginTop: "50px" }}>
+    <MediaQuery largerThan={900} styles={{ width: "60vw", marginTop: "50px" }}>
       <MediaQuery
-        smallerThan={700}
+        smallerThan={900}
         styles={{ width: "100vw", marginTop: "50px" }}
       >
         <StyledContainer>
           <StyledGroup>
             <Title>&lt;projects&gt;</Title>
           </StyledGroup>
-          <MediaQuery largerThan={700} styles={{ maxWidth: "60vw" }}>
-            <MediaQuery smallerThan={700} styles={{ maxWidth: "100vw" }}>
+          <MediaQuery largerThan={900} styles={{ maxWidth: "60vw" }}>
+            <MediaQuery smallerThan={900} styles={{ maxWidth: "100vw" }}>
               <Carousel
                 slideSize="80%"
-                height="80vh"
+                height="70vh"
                 slideGap="xs"
                 controlsOffset="xl"
                 loop
                 withIndicators
+                speed={2.5}
               >
                 <Carousel.Slide>
                   <ProjectItem />
@@ -60,11 +61,9 @@ const StyledContainer = styled(Group)`
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: yellow;
 `;
 
 const StyledGroup = styled(Group)`
   border-bottom: 2px solid white;
   width: 100%;
-  background: blue;
 `;
