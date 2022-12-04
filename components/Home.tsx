@@ -10,7 +10,6 @@ import {
   Group,
   MediaQuery,
 } from "@mantine/core";
-import "../styles/Home.module.scss";
 
 function Home() {
   return (

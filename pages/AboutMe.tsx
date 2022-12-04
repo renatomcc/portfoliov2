@@ -1,42 +1,46 @@
 import styled from "@emotion/styled";
-import { Title, Text, Group, Flex, Grid, MediaQuery } from "@mantine/core";
+import { Group, MediaQuery } from "@mantine/core";
 import Image from "next/image";
-import "../styles/Home.module.scss";
+import Background from "../components/Background";
 
 function AboutMe() {
   return (
-    <MediaQuery largerThan={700} styles={{ width: "60vw" }}>
-      <MediaQuery smallerThan={700} styles={{ width: "90vw" }}>
-        <StyledGroup>
-          <>
-            <Group>
-              <div className="image-home">
-                <Image
-                  src="https://i.redd.it/bs5r0f28sxh51.jpg"
-                  fill
-                  alt="cinthya"
-                  style={{
-                    borderRadius: "8px",
-                    margin: "15px 0px 0px 15px",
-                    userSelect: "none",
-                    pointerEvents: "none",
-                  }}
-                />
-              </div>
-            </Group>
-            <TextGroup className="text-home">
-              <StyledText>
-                I&apos;m a front-end developer that loves to create and learn
-                new things everyday. <br />I had my first blog when i was 11yo
-                and since them i never lost interest in this beautiful area, i
-                hope you like what i have to show and maybe we can work together
-                in the future!
-              </StyledText>
-            </TextGroup>
-          </>
-        </StyledGroup>
+    <>
+      <Background />
+      <MediaQuery largerThan={700} styles={{ width: "60vw" }}>
+        <MediaQuery smallerThan={700} styles={{ width: "90vw" }}>
+          <StyledGroup>
+            <>
+              <Background />
+              <Group>
+                <div className="image-home">
+                  <Image
+                    src="https://i.redd.it/bs5r0f28sxh51.jpg"
+                    fill
+                    alt="cinthya"
+                    style={{
+                      borderRadius: "8px",
+                      margin: "15px 0px 0px 15px",
+                      userSelect: "none",
+                      pointerEvents: "none",
+                    }}
+                  />
+                </div>
+              </Group>
+              <TextGroup className="text-home">
+                <StyledText>
+                  I&apos;m a front-end developer that loves to create and learn
+                  new things everyday. <br />I had my first blog when i was 11yo
+                  and since them i never lost interest in this beautiful area, i
+                  hope you like what i have to show and maybe we can work
+                  together in the future!
+                </StyledText>
+              </TextGroup>
+            </>
+          </StyledGroup>
+        </MediaQuery>
       </MediaQuery>
-    </MediaQuery>
+    </>
   );
 }
 

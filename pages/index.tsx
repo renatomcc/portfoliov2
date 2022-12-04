@@ -1,13 +1,12 @@
 import Head from "next/head";
 import Home from "../components/Home";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
 import { Flex } from "@mantine/core";
-import styled from "@emotion/styled";
+import Background from "../components/Background";
 
 export default function App() {
   return (
     <>
+      <Background />
       <Head>
         <title>Renato Castro</title>
         <meta

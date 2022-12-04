@@ -1,10 +1,5 @@
 import styled from "@emotion/styled";
-import {
-  AppShell,
-  Group,
-  Header,
-  MediaQuery,
-} from "@mantine/core";
+import { AppShell, Group, Header, MediaQuery } from "@mantine/core";
 import Link from "next/link";
 
 export const AppContainer = ({ children }: any) => {
@@ -12,7 +7,6 @@ export const AppContainer = ({ children }: any) => {
     <AppShell
       styles={{
         main: {
-          background: "#071325",
           width: "100vw",
           height: "auto",
           padding: "0px",
@@ -20,6 +14,7 @@ export const AppContainer = ({ children }: any) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          background: "#020c19",
         },
       }}
       fixed
@@ -30,12 +25,14 @@ export const AppContainer = ({ children }: any) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "rgba(7, 19, 37, 0.5)",
-            backdropFilter: "blur(5px)",
-            border: "black",
+            background: "transparent",
+            border: "none",
           }}
         >
-          <MediaQuery largerThan={700} styles={{ fontSize: "25px", gap: '50px' }}>
+          <MediaQuery
+            largerThan={700}
+            styles={{ fontSize: "25px", gap: "50px" }}
+          >
             <Group position="center">
               <Link href="/AboutMe">
                 <StyledButton>About Me</StyledButton>

@@ -9,21 +9,6 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: #734bd1;
-    background: #071325;
-  }
-}
-
-body {
-  background: #071325;
-}
-
 @font-face {
   font-family: Signita;
   src: url("../assets/fonts/Signita/Signika-Medium.ttf");
@@ -37,10 +22,6 @@ body {
 @font-face {
   font-family: Gudea;
   src: url("../assets/fonts/Gudea/Gudea-Regular.ttf");
-}
-
-main {
-  background-color: #071325;
 }
 
 .image-home {
@@ -84,15 +65,16 @@ main {
 .carousel-item {
   background: green;
   height: 800px;
+  width: 50vw;
 }
 
 .description-item {
-  background-color: #0758;
+  background-color: black;
   font-size: 15px;
   padding: 0px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .image-home {
     width: 250px;
     height: 270px;
@@ -108,5 +90,8 @@ main {
   .description-item {
     font-size: 15px;
     padding: 0px;
+  }
+  .carousel-item {
+    width: 80vw;
   }
 }
