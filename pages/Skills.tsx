@@ -23,7 +23,7 @@ function Skills() {
             </StyledGroup>
             <StyledDiv>
               <StyledDiv
-                initial={{ opacity: 0, translateX: -90 }}
+                initial={{ opacity: 0, translateX: -150 }}
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
@@ -106,7 +106,7 @@ function Skills() {
                 </StyledSkillGroup>
               </StyledDiv>
               <StyledDiv
-                initial={{ opacity: 0, translateX: 90 }}
+                initial={{ opacity: 0, translateX: 150 }}
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
               >
