@@ -23,8 +23,8 @@ function Skills() {
             </StyledGroup>
             <StyledDiv>
               <StyledDiv
-                initial={{ opacity: 0, translateX: -150 }}
-                animate={{ opacity: 1, translateX: 0 }}
+                initial={{ opacity: 0, translateY: 150 }}
+                animate={{ opacity: 1, translateY: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 <MediaQuery
@@ -106,8 +106,8 @@ function Skills() {
                 </StyledSkillGroup>
               </StyledDiv>
               <StyledDiv
-                initial={{ opacity: 0, translateX: 150 }}
-                animate={{ opacity: 1, translateX: 0 }}
+                initial={{ opacity: 0, translateY: 150 }}
+                animate={{ opacity: 1, translateY: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
               >
                 <MediaQuery

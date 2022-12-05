@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { AppShell, Group, Header, MediaQuery } from "@mantine/core";
+import { Group, MediaQuery } from "@mantine/core";
 import Link from "next/link";
 
 export const Navbar = () => {
