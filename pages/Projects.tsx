@@ -3,6 +3,7 @@ import { Title, Group, MediaQuery } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import ProjectItem from "../components/ProjectItem";
 import Background from "../components/Background";
+import { motion } from "framer-motion";
 
 function Skills() {
   return (
@@ -16,7 +17,11 @@ function Skills() {
           smallerThan={900}
           styles={{ width: "100vw", marginTop: "50px" }}
         >
-          <StyledContainer>
+          <StyledContainer
+            initial={{ opacity: 0, translateY: -90 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <StyledGroup>
               <Title>&lt;projects&gt;</Title>
             </StyledGroup>
@@ -120,10 +125,11 @@ function Skills() {
 
 export default Skills;
 
-const StyledContainer = styled(Group)`
+const StyledContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   color: white;
+  gap: 20px;
 `;
 
 const StyledGroup = styled(Group)`

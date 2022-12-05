@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Source;
 }
 
 a {
@@ -74,6 +76,12 @@ a {
   padding: 0px;
 }
 
+.item {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
 @media (max-width: 900px) {
   .image-home {
     width: 250px;
@@ -93,5 +101,9 @@ a {
   }
   .carousel-item {
     width: 80vw;
+  }
+  .item {
+    width: 45px;
+    height: 45px;
   }
 }

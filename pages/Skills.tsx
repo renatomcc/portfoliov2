@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Title, Group, Flex, MediaQuery } from "@mantine/core";
 import Image from "next/image";
 import Background from "../components/Background";
+import { motion } from "framer-motion";
 
 function Skills() {
   return (
@@ -13,156 +14,152 @@ function Skills() {
           styles={{ width: "100vw", marginTop: "50px" }}
         >
           <StyledContainer>
-            <StyledGroup>
+            <StyledGroup
+              initial={{ opacity: 0, translateY: -60 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
               <Title>&lt;skills&gt;</Title>
             </StyledGroup>
             <StyledDiv>
-              <StyledDiv>
+              <StyledDiv
+                initial={{ opacity: 0, translateX: -90 }}
+                animate={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
                 <MediaQuery
                   smallerThan={500}
                   styles={{
-                    background: "rgba(255,255,255,0.4)",
+                    background: "#734bd1",
                     width: "100%",
                     borderRadius: "5px",
-                    padding: "5px",
+                    padding: "0px 5px",
+                    margin: "5px",
                   }}
                 >
-                  <Title
+                  <StyledTitle
                     order={3}
                     underline
                     style={{ width: "100%", textAlign: "right" }}
                     italic
                   >
                     Building
-                  </Title>
+                  </StyledTitle>
                 </MediaQuery>
                 <StyledSkillGroup className="skill-group-building">
                   <StyledSkill direction="column">
                     <Title order={4} align="center">
                       HTML
                     </Title>
-                    <Image
-                      src="/../public/images/html.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/html.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
                     <Title order={4} align="center">
                       Javascript
                     </Title>
-                    <Image
-                      src="/../public/images/javascript.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image
+                        src="/../public/images/javascript.png"
+                        alt="a"
+                        fill
+                      />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
                     <Title order={4} align="center">
                       Angular
                     </Title>
-                    <Image
-                      src="/../public/images/angular.png"
-                      alt="a"
-                      width={75}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/angular.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" style={{ gap: "20px" }}>
                     <Title order={4} align="center">
                       React
                     </Title>
-                    <Image
-                      src="/../public/images/react.png"
-                      alt="a"
-                      width={80}
-                      height={75}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/react.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
                     <Title order={4} align="center">
                       NextJS
                     </Title>
-                    <Image
-                      src="/../public/images/nextjs.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/NextJs.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       Typescript
                     </Title>
-                    <Image
-                      src="/../public/images/typescript.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image
+                        src="/../public/images/Typescript.png"
+                        alt="a"
+                        fill
+                      />
+                    </div>
                   </StyledSkill>
                 </StyledSkillGroup>
               </StyledDiv>
-              <StyledDiv>
+              <StyledDiv
+                initial={{ opacity: 0, translateX: 90 }}
+                animate={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 0.6, delay: 1.2 }}
+              >
                 <MediaQuery
                   smallerThan={500}
                   styles={{
-                    background: "rgba(255,255,255,0.4)",
+                    background: "#734bd1",
                     width: "100%",
                     borderRadius: "5px",
-                    padding: "5px",
+                    padding: "0px 5px",
+                    margin: "5px",
                   }}
                 >
-                  <Title order={3} underline italic>
+                  <StyledTitle order={3} underline italic>
                     Styling
-                  </Title>
+                  </StyledTitle>
                 </MediaQuery>
                 <StyledSkillGroup className="skill-group-styling">
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       CSS
                     </Title>
-                    <Image
-                      src="/../public/images/css.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/css.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       Sass
                     </Title>
-                    <Image
-                      src="/../public/images/sass.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/sass.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       Bootstrap
                     </Title>
-                    <Image
-                      src="/../public/images/bootstrap.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image
+                        src="/../public/images/bootstrap.png"
+                        alt="a"
+                        fill
+                      />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       Mantine
                     </Title>
-                    <Image
-                      src="/../public/images/mantine.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image src="/../public/images/mantine.png" alt="a" fill />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
@@ -170,23 +167,25 @@ function Skills() {
                       <br />
                       Components
                     </Title>
-                    <Image
-                      src="/../public/images/styled-components.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image
+                        src="/../public/images/styled-components.png"
+                        alt="a"
+                        fill
+                      />
+                    </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
                     <Title order={4} align="center">
                       Photoshop
                     </Title>
-                    <Image
-                      src="/../public/images/photoshop.png"
-                      alt="a"
-                      width={80}
-                      height={80}
-                    />
+                    <div className="item">
+                      <Image
+                        src="/../public/images/photoshop.png"
+                        alt="a"
+                        fill
+                      />
+                    </div>
                   </StyledSkill>
                 </StyledSkillGroup>
               </StyledDiv>
@@ -200,22 +199,24 @@ function Skills() {
 
 export default Skills;
 
-const StyledContainer = styled(Group)`
+const StyledContainer = styled(motion.div)`
   position: absolute;
   display: flex;
   flex-direction: column;
   color: white;
 `;
 
-const StyledDiv = styled(Group)`
+const StyledDiv = styled(motion.div)`
   width: 100%;
   display: flex;
+  flex-direction: column;
   padding: 10px;
 `;
 
-const StyledGroup = styled(Group)`
+const StyledGroup = styled(motion.div)`
   border-bottom: 2px solid white;
   width: 100%;
+  padding-bottom: 15px;
 `;
 
 const StyledSkillGroup = styled(Group)`
@@ -232,9 +233,13 @@ const StyledSkill = styled(Flex)`
   user-select: none;
   transition: all linear 0.2s;
   &:hover {
-    transform: scale(1.2);
+    transform: translateY(-8px);
   }
   img {
     pointer-events: none;
   }
+`;
+
+const StyledTitle = styled(Title)`
+  padding-bottom: 10px;
 `;

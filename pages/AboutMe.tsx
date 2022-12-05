@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Group, MediaQuery } from "@mantine/core";
 import Image from "next/image";
 import Background from "../components/Background";
+import { motion } from "framer-motion";
 
 function AboutMe() {
   return (
@@ -9,7 +10,11 @@ function AboutMe() {
       <Background />
       <MediaQuery largerThan={700} styles={{ width: "60vw" }}>
         <MediaQuery smallerThan={700} styles={{ width: "90vw" }}>
-          <StyledGroup>
+          <StyledGroup
+            initial={{ opacity: 0, translateY: -90 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <>
               <Background />
               <Group>
@@ -46,7 +51,7 @@ function AboutMe() {
 
 export default AboutMe;
 
-const StyledGroup = styled(Group)`
+const StyledGroup = styled(motion.div)`
   display: flex;
   position: relative;
   justify-content: center;

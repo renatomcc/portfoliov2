@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 import {
   Flex,
   Text,
@@ -14,11 +15,10 @@ import {
 function Home() {
   return (
     <StyledFlex
-      gap="xs"
-      justify="center"
-      align="left"
-      direction="column"
-      wrap="wrap"
+      initial={{ opacity: 0, translateX: -60 }}
+      animate={{ opacity: 1, translateX: 0 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      exit={{ opacity: 0 }}
     >
       <StyledGroup>
         <StyledText>Hello and welcome to my portfolio, my name is</StyledText>
@@ -69,10 +69,16 @@ const StyledButton = createPolymorphicComponent<"button", ButtonProps>(
   _StyledButton
 );
 
-const StyledFlex = styled(Flex)`
+const StyledFlex = styled(motion.div)`
+  display: flex;
+  flex-diretion: column;
   width: 60vw;
   margin-top: 20px;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 `;
 
 const StyledGroup = styled(Group)`
