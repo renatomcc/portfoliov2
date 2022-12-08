@@ -49,17 +49,15 @@ function Skills() {
                 </MediaQuery>
                 <StyledSkillGroup className="skill-group-building">
                   <StyledSkill direction="column">
-                    <Title order={4} align="center">
-                      HTML
-                    </Title>
+                    <StyledSkillTitle order={4}>HTML</StyledSkillTitle>
                     <div className="item">
                       <Image src="/../public/images/html.png" alt="Html" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Javascript
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/javascript.png"
@@ -69,9 +67,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Angular
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/angular.png"
@@ -81,9 +79,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" style={{ gap: "20px" }}>
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       React
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/react.png"
@@ -93,9 +91,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       NextJS
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/NextJs.png"
@@ -105,9 +103,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Typescript
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/Typescript.png"
@@ -139,25 +137,25 @@ function Skills() {
                 </MediaQuery>
                 <StyledSkillGroup className="skill-group-styling">
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       CSS
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image src="/../public/images/css.png" alt="Css" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Sass
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image src="/../public/images/sass.png" alt="Sass" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Bootstrap
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/bootstrap.png"
@@ -167,9 +165,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Mantine
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/mantine.png"
@@ -179,11 +177,11 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Styled
                       <br />
                       Components
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/styled-components.png"
@@ -193,9 +191,9 @@ function Skills() {
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
-                    <Title order={4} align="center">
+                    <StyledSkillTitle order={4}>
                       Photoshop
-                    </Title>
+                    </StyledSkillTitle>
                     <div className="item">
                       <Image
                         src="/../public/images/photoshop.png"
@@ -220,7 +218,6 @@ const StyledContainer = styled(motion.div)`
   position: absolute;
   display: flex;
   flex-direction: column;
-  color: white;
 `;
 
 const StyledDiv = styled(motion.div)`
@@ -253,4 +250,9 @@ const StyledSkill = styled(Flex)`
 
 const StyledTitle = styled(Title)`
   padding-bottom: 5px;
+`;
+
+const StyledSkillTitle = styled(Title)`
+  text-align: center;
+  color: #734bd1;
 `;
