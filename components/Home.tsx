@@ -58,6 +58,7 @@ const _StyledText = styled(Text)`
 const StyledText = createPolymorphicComponent<"text", TextProps>(_StyledText);
 
 const _StyledButton = styled(Button)`
+  font-family: Gudea;
   color: #e9e9e9;
   &:hover {
     background-color: #734bd1;

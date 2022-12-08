@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <MediaQuery largerThan={700} styles={{ fontSize: "25px", gap: "50px" }}>
+    <MediaQuery
+      largerThan={700}
+      styles={{ fontSize: "25px", gap: "50px", marginTop: "30px" }}
+    >
       <StyledGroup position="center">
         <Link href="/AboutMe">
           <StyledButton>About Me</StyledButton>
@@ -26,15 +29,15 @@ export const Navbar = () => {
 const StyledButton = styled.div`
   color: #734bd1;
   font-weight: 600;
-  font-family: Source;
-  transition: all ease-in-out 0.2s;
+  font-family: Gudea;
+  transition: all ease-in-out 0.3s;
   &:hover {
-    transition: all ease-in-out 0.2s;
-    transform: scale(1.2);
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.1);
   }
 `;
 
 const StyledGroup = styled(Group)`
   position: fixed;
-  top: 0;
+  top: 30px;
 `;

@@ -1,6 +1,5 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import { AppContainer } from "../components/AppContainer";
 import { MantineProvider } from "@mantine/core";
 import Background from "../components/Background";
 import { AnimatePresence } from "framer-motion";

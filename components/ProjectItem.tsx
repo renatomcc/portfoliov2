@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 import {
   Button,
-  Card,
   Group,
   MediaQuery,
   Text,
   Title,
   Badge,
   Flex,
+  createPolymorphicComponent,
+  TextProps,
 } from "@mantine/core";
 import React from "react";
 import { IProject } from "../pages/Projects";
@@ -17,23 +18,44 @@ function ProjectItem(props: IProject) {
   return (
     <StyledCard className="carousel-item">
       <MediaQuery smallerThan={1100} styles={{ display: "none" }}>
-        <Image src={props.image} fill alt="a" style={{ opacity: "0.5" }} />
+        <Image
+          src={props.image}
+          fill
+          alt={props.altImage}
+          style={{ opacity: "0.5", borderRadius: "10px" }}
+        />
       </MediaQuery>
       <MediaQuery largerThan={1100} styles={{ display: "none" }}>
         <Image
           src={props.mobileImage}
           fill
-          alt="a"
-          style={{ opacity: "0.5" }}
+          alt={props.altImage}
+          style={{ opacity: "0.5", borderRadius: "10px" }}
         />
       </MediaQuery>
 
       <StyledGroup>
         <Flex gap="xs" wrap="wrap" justify="center" align="center">
-          <Button color="grape" radius="xs" size="lg">
+          <Button
+            color="grape"
+            radius="xs"
+            style={{ boxShadow: "2px 2px 2px rgba(0,0,0,0.4)" }}
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.livelink}
+          >
             WATCH LIVE
           </Button>
-          <Button color="grape" radius="xs" size="lg">
+          <Button
+            color="grape"
+            radius="xs"
+            style={{ boxShadow: "2px 2px 2px rgba(0,0,0,0.4)" }}
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.repolink}
+          >
             CODE
           </Button>
         </Flex>
@@ -45,6 +67,7 @@ function ProjectItem(props: IProject) {
               radius="sm"
               variant="filled"
               key={skill}
+              style={{ boxShadow: "2px 2px 2px rgba(0,0,0,0.4)" }}
             >
               {skill}
             </Badge>
@@ -52,7 +75,8 @@ function ProjectItem(props: IProject) {
         </Flex>
       </StyledGroup>
       <StyledDescription className="description-item">
-        <Text>{props.description}</Text>
+        <Title order={4}>{props.altImage} </Title>
+        <StyledText>{props.description}</StyledText>
       </StyledDescription>
     </StyledCard>
   );
@@ -61,7 +85,7 @@ function ProjectItem(props: IProject) {
 export default ProjectItem;
 
 const StyledCard = styled.div`
-  background-color: black;
+  background-color: transparent;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -81,9 +105,21 @@ const StyledGroup = styled(Group)`
 `;
 
 const StyledDescription = styled.div`
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   padding: 10px 0px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
 `;
+
+const _StyledText = styled(Text)`
+  font-family: Gudea;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+  font-weight: 500;
+`;
+
+const StyledText = createPolymorphicComponent<"text", TextProps>(_StyledText);

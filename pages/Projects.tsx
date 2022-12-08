@@ -13,18 +13,15 @@ function Skills() {
         largerThan={900}
         styles={{ width: "60vw", marginTop: "50px" }}
       >
-        <MediaQuery
-          smallerThan={900}
-          styles={{ width: "100vw", marginTop: "50px" }}
-        >
+        <MediaQuery smallerThan={900} styles={{ width: "100vw" }}>
           <StyledContainer
             initial={{ opacity: 0, translateY: -90 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <StyledGroup>
-              <StyledTitle>&lt;projects&gt;</StyledTitle>
-            </StyledGroup>
+            <motion.div className="page-group">
+              <StyledTitle className="page-title">&lt;projects&gt;</StyledTitle>
+            </motion.div>
             <MediaQuery largerThan={900} styles={{ maxWidth: "60vw" }}>
               <MediaQuery smallerThan={900} styles={{ maxWidth: "100vw" }}>
                 <motion.div
@@ -44,9 +41,10 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/domgames.png"
+                        altImage="Dom Games"
                         mobileImage="/../public/images/projects/domgamesMobile.png"
                         skills={["Html", "CSS", "Javascript"]}
-                        description="a"
+                        description="My first Javascritp project ever created, a compilation of 8 different games build with original idea."
                         livelink="https://domgames-renatomcc.netlify.app"
                         repolink="https://github.com/renatomcc/dom-games"
                       />
@@ -54,9 +52,10 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/pokedex.png"
+                        altImage="Pokedex"
                         mobileImage="/../public/images/projects/pokedexMobile.png"
                         skills={["React", "Typescript", "Sass"]}
-                        description="a"
+                        description="Pokedex created using the PokéAPI, you can sort by filters, set your favorites, see the shiny form of the pokemon and search it by name."
                         livelink="https://pokedex-renatomcc.netlify.app"
                         repolink="https://github.com/renatomcc/pokedex"
                       />
@@ -64,9 +63,10 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/countries.png"
+                        altImage="Around The World"
                         mobileImage="/../public/images/projects/countriesMobile.png"
                         skills={["React", "Typescript", "Sass"]}
-                        description="a"
+                        description="Website created with the CountriesAPI, it contain every country flag and a modal with more information about the country. It also has a filter by region and search by name feature."
                         livelink="https://countries-renatomcc.netlify.app"
                         repolink="https://github.com/renatomcc/countries"
                       />
@@ -74,6 +74,7 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/ecommerce.png"
+                        altImage="E-commerce"
                         mobileImage="/../public/images/projects/ecommerceMobile.png"
                         skills={[
                           "React",
@@ -82,7 +83,7 @@ function Skills() {
                           "Styled Components",
                           "Mantine UI",
                         ]}
-                        description="a"
+                        description="E-commerce website created with the FakestoreAPI and Redux Toolkit to global state management."
                         livelink="https://ecommerce-renatomcc.vercel.app"
                         repolink="https://github.com/renatomcc/redux-ecommerce"
                       />
@@ -90,6 +91,7 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/pokedexv2.png"
+                        altImage="Pokedex v2"
                         mobileImage="/../public/images/projects/pokedexv2Mobile.png"
                         skills={[
                           "React",
@@ -97,7 +99,7 @@ function Skills() {
                           "Styled Components",
                           "Mantine UI",
                         ]}
-                        description="a"
+                        description="Newer version of the Pokedex, with a lot more filters, features and information about the pokemons."
                         livelink="https://pokedex-renatomcc.netlify.app"
                         repolink="https://github.com/renatomcc/pokedexv2"
                       />
@@ -105,6 +107,7 @@ function Skills() {
                     <Carousel.Slide>
                       <ProjectItem
                         image="/../public/images/projects/league.png"
+                        altImage="League Champions"
                         mobileImage="/../public/images/projects/leagueMobile.png"
                         skills={[
                           "NextJS",
@@ -113,9 +116,9 @@ function Skills() {
                           "Mantine UI",
                           "Framer Motion",
                         ]}
-                        description="a"
+                        description="Website with every League of Legends champion created with the RiotGamesAPI, with class, title, skills and lore information of the champ."
                         livelink="https://league-nextjs.vercel.app"
-                        repolink="https://github.com/renatomcc"
+                        repolink="https://github.com/renatomcc/league-nextjs"
                       />
                     </Carousel.Slide>
                   </Carousel>
@@ -138,13 +141,9 @@ const StyledContainer = styled(motion.div)`
   gap: 20px;
 `;
 
-const StyledGroup = styled(Group)`
-  border-bottom: 2px solid white;
-  width: 100%;
-`;
-
 export interface IProject {
   image: string;
+  altImage: string;
   mobileImage: string;
   skills: string[];
   description: string;

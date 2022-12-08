@@ -11,16 +11,17 @@ function Skills() {
       <MediaQuery largerThan={700} styles={{ width: "60vw" }}>
         <MediaQuery
           smallerThan={700}
-          styles={{ width: "100vw", marginTop: "50px" }}
+          styles={{ width: "100vw", paddingTop: "50px" }}
         >
           <StyledContainer>
-            <StyledGroup
+            <motion.div
               initial={{ opacity: 0, translateY: -60 }}
               animate={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
+              className="page-group"
             >
-              <Title>&lt;skills&gt;</Title>
-            </StyledGroup>
+              <Title className="page-title">&lt;skills&gt;</Title>
+            </motion.div>
             <StyledDiv>
               <StyledDiv
                 initial={{ opacity: 0, translateY: 150 }}
@@ -34,7 +35,7 @@ function Skills() {
                     width: "100%",
                     borderRadius: "5px",
                     padding: "0px 5px",
-                    margin: "5px",
+                    marginBottom: "10px",
                   }}
                 >
                   <StyledTitle
@@ -52,7 +53,7 @@ function Skills() {
                       HTML
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/html.png" alt="a" fill />
+                      <Image src="/../public/images/html.png" alt="Html" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
@@ -72,7 +73,11 @@ function Skills() {
                       Angular
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/angular.png" alt="a" fill />
+                      <Image
+                        src="/../public/images/angular.png"
+                        alt="Angular"
+                        fill
+                      />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" style={{ gap: "20px" }}>
@@ -80,7 +85,11 @@ function Skills() {
                       React
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/react.png" alt="a" fill />
+                      <Image
+                        src="/../public/images/react.png"
+                        alt="React"
+                        fill
+                      />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
@@ -88,7 +97,11 @@ function Skills() {
                       NextJS
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/NextJs.png" alt="a" fill />
+                      <Image
+                        src="/../public/images/NextJs.png"
+                        alt="NextJS"
+                        fill
+                      />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -98,7 +111,7 @@ function Skills() {
                     <div className="item">
                       <Image
                         src="/../public/images/Typescript.png"
-                        alt="a"
+                        alt="Typescript"
                         fill
                       />
                     </div>
@@ -117,7 +130,7 @@ function Skills() {
                     width: "100%",
                     borderRadius: "5px",
                     padding: "0px 5px",
-                    margin: "5px",
+                    marginBottom: "10px",
                   }}
                 >
                   <StyledTitle order={3} underline italic>
@@ -130,7 +143,7 @@ function Skills() {
                       CSS
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/css.png" alt="a" fill />
+                      <Image src="/../public/images/css.png" alt="Css" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -138,7 +151,7 @@ function Skills() {
                       Sass
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/sass.png" alt="a" fill />
+                      <Image src="/../public/images/sass.png" alt="Sass" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -148,7 +161,7 @@ function Skills() {
                     <div className="item">
                       <Image
                         src="/../public/images/bootstrap.png"
-                        alt="a"
+                        alt="Bootstrap"
                         fill
                       />
                     </div>
@@ -158,7 +171,11 @@ function Skills() {
                       Mantine
                     </Title>
                     <div className="item">
-                      <Image src="/../public/images/mantine.png" alt="a" fill />
+                      <Image
+                        src="/../public/images/mantine.png"
+                        alt="Mantine"
+                        fill
+                      />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -170,7 +187,7 @@ function Skills() {
                     <div className="item">
                       <Image
                         src="/../public/images/styled-components.png"
-                        alt="a"
+                        alt="Styled Components"
                         fill
                       />
                     </div>
@@ -182,7 +199,7 @@ function Skills() {
                     <div className="item">
                       <Image
                         src="/../public/images/photoshop.png"
-                        alt="a"
+                        alt="Photoshop"
                         fill
                       />
                     </div>
@@ -213,12 +230,6 @@ const StyledDiv = styled(motion.div)`
   padding: 10px;
 `;
 
-const StyledGroup = styled(motion.div)`
-  border-bottom: 2px solid white;
-  width: 100%;
-  padding-bottom: 15px;
-`;
-
 const StyledSkillGroup = styled(Group)`
   width: 100%;
   display: flex;
@@ -241,5 +252,5 @@ const StyledSkill = styled(Flex)`
 `;
 
 const StyledTitle = styled(Title)`
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 `;
