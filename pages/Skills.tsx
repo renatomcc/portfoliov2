@@ -51,7 +51,7 @@ function Skills() {
                   <StyledSkill direction="column">
                     <StyledSkillTitle order={4}>HTML</StyledSkillTitle>
                     <div className="item">
-                      <Image src="/../public/images/html.png" alt="Html" fill />
+                      <Image src="/../public/images/ecommerceMobile.png" alt="Html" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">

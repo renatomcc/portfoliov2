@@ -40,9 +40,9 @@ function Skills() {
                   >
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/domgames.png"
+                        image="/../public/static/img/domgames.png"
                         altImage="Dom Games"
-                        mobileImage="/../public/images/projects/domgamesMobile.png"
+                        mobileImage="/../public/static/img/domgamesMobile.png"
                         skills={["Html", "CSS", "Javascript"]}
                         description="My first Javascritp project ever created, a compilation of 8 different games build with original idea."
                         livelink="https://domgames-renatomcc.netlify.app"
@@ -51,9 +51,9 @@ function Skills() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/pokedex.png"
+                        image="/../public/static/img/pokedex.png"
                         altImage="Pokedex"
-                        mobileImage="/../public/images/projects/pokedexMobile.png"
+                        mobileImage="/../public/static/img/pokedexMobile.png"
                         skills={["React", "Typescript", "Sass"]}
                         description="Pokedex created using the PokéAPI, you can sort by filters, set your favorites, see the shiny form of the pokemon and search it by name."
                         livelink="https://pokedex-renatomcc.netlify.app"
@@ -62,9 +62,9 @@ function Skills() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/countries.png"
+                        image="/../public/static/img/countries.png"
                         altImage="Around The World"
-                        mobileImage="/../public/images/projects/countriesMobile.png"
+                        mobileImage="/../public/static/img/countriesMobile.png"
                         skills={["React", "Typescript", "Sass"]}
                         description="Website created with the CountriesAPI, it contain every country flag and a modal with more information about the country. It also has a filter by region and search by name feature."
                         livelink="https://countries-renatomcc.netlify.app"
@@ -73,9 +73,9 @@ function Skills() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/ecommerce.png"
+                        image="/../public/static/img/ecommerce.png"
                         altImage="E-commerce"
-                        mobileImage="/../public/images/projects/ecommerceMobile.png"
+                        mobileImage="/../public/static/img/ecommerceMobile.png"
                         skills={[
                           "React",
                           "Typescript",
@@ -90,9 +90,9 @@ function Skills() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/pokedexv2.png"
+                        image="/../public/static/img/pokedexv2.png"
                         altImage="Pokedex v2"
-                        mobileImage="/../public/images/projects/pokedexv2Mobile.png"
+                        mobileImage="/../public/static/img/pokedexv2Mobile.png"
                         skills={[
                           "React",
                           "Typescript",
@@ -106,9 +106,9 @@ function Skills() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                       <ProjectItem
-                        image="/../public/images/projects/league.png"
+                        image="/../public/static/img/league.png"
                         altImage="League Champions"
-                        mobileImage="/../public/images/projects/leagueMobile.png"
+                        mobileImage="/../public/static/img/leagueMobile.png"
                         skills={[
                           "NextJS",
                           "Typescript",
