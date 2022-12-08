@@ -11,7 +11,7 @@ function Skills() {
       <MediaQuery largerThan={700} styles={{ width: "60vw" }}>
         <MediaQuery
           smallerThan={700}
-          styles={{ width: "100vw", paddingTop: "50px" }}
+          styles={{ width: "100vw", marginTop: "30px" }}
         >
           <StyledContainer>
             <motion.div
