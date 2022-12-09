@@ -51,7 +51,7 @@ function Skills() {
                   <StyledSkill direction="column">
                     <StyledSkillTitle order={4}>HTML</StyledSkillTitle>
                     <div className="item">
-                      <Image src="/../public/images/ecommerceMobile.png" alt="Html" fill />
+                      <Image src="/static/img/html.png" alt="Html" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column">
@@ -60,7 +60,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/javascript.png"
+                        src="/static/img/javascript.png"
                         alt="a"
                         fill
                       />
@@ -72,7 +72,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/angular.png"
+                        src="/static/img/angular.png"
                         alt="Angular"
                         fill
                       />
@@ -84,7 +84,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/react.png"
+                        src="/static/img/react.png"
                         alt="React"
                         fill
                       />
@@ -96,7 +96,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/NextJs.png"
+                        src="/static/img/NextJs.png"
                         alt="NextJS"
                         fill
                       />
@@ -108,7 +108,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/Typescript.png"
+                        src="/static/img/Typescript.png"
                         alt="Typescript"
                         fill
                       />
@@ -141,7 +141,7 @@ function Skills() {
                       CSS
                     </StyledSkillTitle>
                     <div className="item">
-                      <Image src="/../public/images/css.png" alt="Css" fill />
+                      <Image src="/static/img/css.png" alt="Css" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -149,7 +149,7 @@ function Skills() {
                       Sass
                     </StyledSkillTitle>
                     <div className="item">
-                      <Image src="/../public/images/sass.png" alt="Sass" fill />
+                      <Image src="/static/img/sass.png" alt="Sass" fill />
                     </div>
                   </StyledSkill>
                   <StyledSkill direction="column" align="center">
@@ -158,7 +158,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/bootstrap.png"
+                        src="/static/img/bootstrap.png"
                         alt="Bootstrap"
                         fill
                       />
@@ -170,7 +170,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/mantine.png"
+                        src="/static/img/mantine.png"
                         alt="Mantine"
                         fill
                       />
@@ -184,7 +184,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/styled-components.png"
+                        src="/static/img/styled-components.png"
                         alt="Styled Components"
                         fill
                       />
@@ -196,7 +196,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/../public/images/photoshop.png"
+                        src="/static/img/photoshop.png"
                         alt="Photoshop"
                         fill
                       />
