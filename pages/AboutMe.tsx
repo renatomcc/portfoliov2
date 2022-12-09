@@ -20,9 +20,9 @@ function AboutMe() {
               <Group>
                 <div className="image-home">
                   <Image
-                    src="https://i.redd.it/bs5r0f28sxh51.jpg"
+                    src="/static/img/me.png"
                     fill
-                    alt="cinthya"
+                    alt="Renato Castro"
                     style={{
                       borderRadius: "8px",
                       margin: "15px 0px 0px 15px",
