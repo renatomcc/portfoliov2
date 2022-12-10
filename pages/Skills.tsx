@@ -96,7 +96,7 @@ function Skills() {
                     </StyledSkillTitle>
                     <div className="item">
                       <Image
-                        src="/static/img/nextJs.png"
+                        src="/static/img/nextjs.png"
                         alt="NextJS"
                         fill
                       />
