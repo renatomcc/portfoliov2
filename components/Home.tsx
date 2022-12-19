@@ -32,7 +32,14 @@ function Home() {
           And i&#8217;ll be happy to show you some of my works :&#41;
         </StyledText>
 
-        <StyledButton variant="outline" size="xl" color="violet">
+        <StyledButton
+          variant="outline"
+          size="xl"
+          color="violet"
+          component="a"
+          href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=renattocasttro@gmail.com"
+          target="_blank"
+        >
           Get in touch!
         </StyledButton>
       </StyledGroup>
