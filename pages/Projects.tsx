@@ -100,7 +100,7 @@ function Skills() {
                           "Mantine UI",
                         ]}
                         description="Newer version of the Pokedex, with a lot more filters, features and information about the pokemons."
-                        livelink="https://pokedex-renatomcc.netlify.app"
+                        livelink="https://pokedexv2-renatomcc.netlify.app"
                         repolink="https://github.com/renatomcc/pokedexv2"
                       />
                     </Carousel.Slide>
